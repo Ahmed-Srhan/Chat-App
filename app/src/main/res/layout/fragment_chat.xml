@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/back"
+        android:id="@+id/chatBackButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:id="@+id/chatImageUser"
+        android:src="@drawable/profile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/chatImageUser"
+        android:text="User Name"
+        android:id="@+id/chatFragUserName"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:layout_below="@id/chatFragUserName"
+        android:background="@color/off_white"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sendMessage"
+        android:layout_below="@id/chatFragUserName"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_7sdp" />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMessage"
+        android:hint="  Type Message"
+        android:paddingLeft="@dimen/_7sdp"
+        android:background="@drawable/et_text"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_toLeftOf="@id/sendMessage"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:minHeight="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_toStartOf="@id/sendMessage"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/_3sdp" />
+
+
+    <ImageButton
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:id="@+id/sendMessage"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:text="Send"
+        android:backgroundTint="@color/my_primary"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="@drawable/send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

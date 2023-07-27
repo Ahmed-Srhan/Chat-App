@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:gravity="center"
+    android:layout_marginBottom="20dp">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_155sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_above="@id/etEmail"
+        android:layout_centerInParent="true"
+        android:src="@drawable/telegram" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerInParent="true"
+        android:text="Messenger"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_18ssp"
+        android:padding="@dimen/_4sdp"
+      android:paddingBottom="@dimen/_4sdp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/edit_text_bg"
+        android:textColorHint="@color/gray"
+        android:elevation="@dimen/_4sdp"
+        android:hint=" Email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@android:color/black" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/edit_text_bg"
+        android:textColorHint="@color/gray"
+
+        android:elevation="@dimen/_4sdp"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@android:color/black" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up?"
+        android:id="@+id/goToSignUp"/>
+
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goToSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/button_bg"
+
+        android:text="Sign In" />
+    <ProgressBar
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:indeterminateTint="@color/my_primary"
+        android:layout_below="@id/signInBtn"
+        android:id="@+id/progressBar"
+
+        android:layout_centerHorizontal="true"
+
+
+
+        />
+
+
+
+</RelativeLayout>

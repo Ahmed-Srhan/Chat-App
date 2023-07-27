@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_155sdp"
+        android:layout_height="@dimen/_155sdp"
+        android:layout_above="@id/etNameSignUp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/telegram" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="Messenger"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/etNameSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="@dimen/_4sdp"
+        android:hint=" Name"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/etEmailSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNameSignUp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="@dimen/_4sdp"
+        android:hint=" Email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/gray" />
+
+
+    <EditText
+        android:id="@+id/etPasswordSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmailSignUp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="@dimen/_4sdp"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPasswordSignUp"
+        android:layout_centerHorizontal="true"
+
+        android:text="Sign In?"
+        android:id="@+id/goToSignInActivity"/>
+
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goToSignInActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/button_bg"
+        android:text="Sign Up"
+        android:textColor="@android:color/white" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminateTint="@color/my_primary"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/signUpBtn"
+
+        android:layout_centerHorizontal="true"
+
+
+
+        />
+
+
+
+
+
+
+</RelativeLayout>
